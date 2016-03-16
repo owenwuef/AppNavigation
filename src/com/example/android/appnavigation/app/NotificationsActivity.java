@@ -19,13 +19,13 @@ package com.example.android.appnavigation.app;
 import com.example.android.appnavigation.R;
 
 import android.app.Activity;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.app.TaskStackBuilder;
-import android.content.Intent;
+//import android.app.Notification;
+//import android.app.NotificationManager;
+//import android.app.PendingIntent;
+//import android.app.TaskStackBuilder;
+//import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+//import android.view.View;
 
 public class NotificationsActivity extends Activity {
     @Override
@@ -33,7 +33,7 @@ public class NotificationsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notifications);
     }
-
+/*
     public void onPostDirect(View v) {
         Notification.Builder builder = new Notification.Builder(this)
                 .setTicker("Direct Notification")
@@ -62,6 +62,7 @@ public class NotificationsActivity extends Activity {
                                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
                                         Intent.FLAG_ACTIVITY_CLEAR_TASK), 0));
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        nm.notify("interstitial_tag", R.id.interstitial_notification, builder.getNotification());
+        nm.notify("interstitial_tag", R.id.interstitial_notification, builder.build());
     }
-}
+*/
+    }
